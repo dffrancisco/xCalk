@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="xCalk.js"></script>
+
+    <link rel="stylesheet" href="../superClass/xModal/xModal.css">
+    <script src="../superClass/xModal/xModal.js"></script>
+
+    <style>
+        #pnCalk .xModal-modal-content {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #calk {
+            /* margin-top: 2px; */
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="pnCalk">
+        <div id="calk"></div>
+    </div>
+
+    <script>
+        new xCalk.create({
+            el: '#calk'
+        })
+
+        const calc = new xModal.create({
+            el: '#pnCalk',
+            theme: 'xModal-dark',
+            height: 537,
+            width: 232,
+            modal: false,
+            left: 0,
+            top: 0,
+            onOpen: () => {
+                document.querySelector('.xCalk').focus()
+            }
+        })
+
+        calc.open()
+
+        let title = document.querySelector('.xModal-modal-head')
+
+        title.addEventListener('click', () => {
+            document.querySelector('.xCalk').focus()
+        })
+    </script>
+
+    <!-- <div id="xCalk" tabindex="1">
+        <div class="calkTop">
+            <div class="calkResul">
+                <div>a</div>
+                <label>op</label>
+                <span>0,00</span>
+            </div>
+        </div>
+    </div>
+    <div class="calkMeio">
+        <div class="calkRow">
+            <div class="calkQtoResult">
+                Quantidade de Itens
+                <span>11</span>
+            </div>
+            <div class="calkDisplay">display</div>
+        </div>
+        <div class="calkRow">
+            <div class="calkBtn" val="C" alt="Tecla de atalho para limpar C" title="Tecla de atalho para limpar C">AC
+            </div>
+            <div class="calkBtn" alt="Apagar" title="Apagar">&laquo;</div>
+            <div class="calkBtn" alt="Tecla de atalho seta para Direita" title="Tecla de atalho seta para Direita">%
+            </div>
+            <div class="calkBtn">÷</div>
+        </div>
+        <div class="calkRow">
+            <div class="calkBtn calkBtnNunber">7</div>
+            <div class="calkBtn calkBtnNunber">8</div>
+            <div class="calkBtn calkBtnNunber">9</div>
+            <div class="calkBtn">x</div>
+        </div>
+        <div class="calkRow">
+            <div class="calkBtn calkBtnNunber">4</div>
+            <div class="calkBtn calkBtnNunber">5</div>
+            <div class="calkBtn calkBtnNunber">6</div>
+            <div class="calkBtn">-</div>
+        </div>
+        <div class="calkRow">
+            <div class="calkBtn calkBtnNunber">1</div>
+            <div class="calkBtn calkBtnNunber">2</div>
+            <div class="calkBtn calkBtnNunber">3</div>
+            <div class="calkBtn">+</div>
+        </div>
+        <div class="calkRow">
+            <div class="calkBtn" val="P" alt="Retorna porcentagem % entre dois valores. Atalho, Seta para baixo. (Informe o Menor Valor Primeiro)" title="Retorna porcentagem % entre dois valores. Atalho, Seta para baixo. (Informe o Menor Valor Primeiro)">
+            </div>
+            <div class="calkBtn calkBtnNunber">0</div>
+            <div class="calkBtn">,</div>
+            <div class="calkBtn" alt="Tecla de atalho para Resultado Enter" title="Tecla de atalho para Resultado Enter">=</div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
