@@ -47,6 +47,31 @@
         padding-right: 5px;
     }
     
+    .xCalk .xCalkAutoSum {
+        position: relative;
+        top: -46px;
+        left: -111px;
+        font-size: 11px;
+        height: 12px;
+    }
+    
+    .xCalk .xCalkHistoryBox {
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.21);
+        margin-bottom: 6px;
+        border-radius: 8px;
+        padding: 5px;
+    }
+    
+    .xCalkHistoryBox .labelOp {
+        padding-right: 6px;
+    }
+    
+    .xCalkHistoryBox .xCalkLabelAutoSum {
+        font-size: 10px;
+        opacity: 0.8;
+    }
+    
     .xCalk .xCalkResult label {
         font-size: .7em;
         margin-top: -12px;
@@ -85,12 +110,17 @@
     .xCalkBlue {
         background: #2c3643;
         font-family: sans-serif;
-        border: 1px solid #4b6d91;
+        /* border: 1px solid #4b6d91; */
     }
     
     .xCalkBlue .xCalkHistory {
         background: #4b6d91;
         color: #e1e7ef;
+    }
+    
+    .xCalkBlue .xCalkHistory label {
+        padding-right: 5px;
+        color: #96aabf;
     }
     
     .xCalkBlue .xCalkResult {
@@ -149,7 +179,7 @@
     
     .xCalkDark {
         font-family: sans-serif;
-        border: 1px solid #4b6d91;
+        /* border: 1px solid #4b6d91; */
     }
     
     .xCalkDark .xCalkHistory {

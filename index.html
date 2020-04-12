@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="xCalk.js"></script>
 
-    <link rel="stylesheet" href="../superClass/xModal/xModal.css">
-    <script src="../superClass/xModal/xModal.js"></script>
+    <link rel="stylesheet" href="http://localhost/_projeto_real/superClass/xModal/xModal.css">
+    <script src="http://localhost/_projeto_real/superClass/xModal/xModal.js"></script>
 
     <style>
         #pnCalk .xModal-modal-content {
@@ -28,35 +28,13 @@
 
 <body>
 
-    <div id="pnCalk">
-        <div id="calk"></div>
-    </div>
+    <div>Francisco</div>
+
 
     <script>
-        new xCalk.create({
-            el: '#calk'
-        })
-
-        const calc = new xModal.create({
-            el: '#pnCalk',
-            theme: 'xModal-dark',
-            height: 537,
-            width: 232,
-            modal: false,
-            left: 0,
-            top: 0,
-            onOpen: () => {
-                document.querySelector('.xCalk').focus()
-            }
-        })
+        let calc = new xCalkModal()
 
         calc.open()
-
-        let title = document.querySelector('.xModal-modal-head')
-
-        title.addEventListener('click', () => {
-            document.querySelector('.xCalk').focus()
-        })
     </script>
 
     <!-- <div id="xCalk" tabindex="1">
